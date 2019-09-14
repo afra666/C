@@ -1,3 +1,5 @@
+蓝桥杯要求必须是加return 0
+===================
 正确1：直接使用printf
 #include "stdio.h"
 int main(){
@@ -14,6 +16,15 @@ int main(){
     scanf("%d",&a);
     scanf("%d",&b);
     printf_s("%d",a+b);
+    return 0;
+}
+ 正确3：
+ #include "stdio.h"
+main(){
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("%d",a+b);
     return 0;
 }
 
